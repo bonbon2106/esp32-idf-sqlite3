@@ -1,4 +1,5 @@
-set(COMPONENT_SRCS "sqlite3.c esp32.c")
+set(COMPONENT_SRCS "sqlite3.c esp32.c shox96_0_2.c")
+set(COMPONENT_PRIV_INCLUDEDIRS "private_include")
 set(COMPONENT_ADD_INCLUDEDIRS "include")
-set(COMPONENT_REQUIRES)
+set(COMPONENT_REQUIRES "spi_flash")
 register_component()
